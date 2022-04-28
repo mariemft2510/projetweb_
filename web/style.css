@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Grape+Nuts&display=swap');
+body{
+    font-family: 'Beau Rivage', cursive;
+  background-image:url("./img/back.png");
+
+
+} 
+
+nav {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+nav h1{
+  font-family: 'Crimson Text', serif;
+  font-size: 40px;
+  color:#ef66bf;
+}
+nav .onglets{
+  margin-top: 35px;
+}
+nav .onglets a{
+  text-decoration: none;
+  color:#08c5f5;
+  margin-right: 40px;
+} 
+nav h2{
+  text-decoration: none;
+  text-align: right;
+  color:#08c5f5;
+  margin-right: 20px; 
+  position: absolute;
+  top: 550px;
+  right: 20px;
+} 
+nav h3{ 
+  position: absolute;
+  top: 600px;
+  right: 20px;
+} 
+nav h4{ 
+  position: absolute;
+  top: 690px;
+  right: 10px;
+} 
+
+
+button {
+  border: 0;
+  background: transparent;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+  transition: all .2s;
+}
+ 
+button::after{
+  content: "";
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(225deg,#27d86c 0%, #26caf8 50%, #c625d0 100%);
+  position: absolute;
+  top: -50px;
+  left:-100px;
+  z-index: -1;
+  transition: all .5s;
+} 
+button:hover::after {
+  transform: rotate(150deg);
+}
+button:hover {
+  transform: translate(0,-6px);
+  box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
+}
+
+
+
