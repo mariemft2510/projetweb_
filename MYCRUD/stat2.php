@@ -1,11 +1,10 @@
 <?php  
  $connect = mysqli_connect("localhost", "root", "", "crud");  
- $query = "SELECT prix, count(*) as number FROM services GROUP BY prix";  
+ $query = "SELECT typepublication, count(*) as number FROM publication GROUP BY typepublication";  
  $result = mysqli_query($connect, $query);  
- $query2 = "SELECT evaluation, count(*) as number FROM services GROUP BY evaluation";  
+ $query2 = "SELECT numan, count(*) as number FROM publication GROUP BY numan";  
  $result2 = mysqli_query($connect, $query2);  
- $query3 = "SELECT datetr, count(*) as number FROM services GROUP BY datetr";  
- $result3 = mysqli_query($connect, $query3);  
+ 
 ?>  
 
  <!DOCTYPE html>  
@@ -20,16 +19,16 @@
            function drawChart()  
            {  
                 var data = google.visualization.arrayToDataTable([  
-                          ['prix', 'Number'],  
+                          ['typepublication', 'Number'],  
                           <?php  
                           while($row = mysqli_fetch_array($result))  
                           {  
-                               echo "['".$row["prix"]."', ".$row["number"]."],";  
+                               echo "['".$row["typepublication"]."', ".$row["number"]."],";  
                           }  
                           ?>  
                      ]);  
                 var options = {  
-                      title: 'Percentage par rapport de prix ',  
+                      title: 'Percentage par rapport de typepublication ',  
                       is3D:true,  
                       pieHole: 0.4  
                      };  
@@ -50,16 +49,16 @@
            function drawChart()  
            {  
                 var data = google.visualization.arrayToDataTable([  
-                          ['evaluation', 'Number'],  
+                          ['numan', 'Number'],  
                           <?php  
                           while($row = mysqli_fetch_array($result2))  
                           {  
-                               echo "['".$row["evaluation"]."', ".$row["number"]."],";  
+                               echo "['".$row["numan"]."', ".$row["number"]."],";  
                           }  
                           ?>  
                      ]);  
                 var options = {  
-                      title: 'Percentage par rapport aux evaluations',  
+                      title: 'Percentage par rapport aux numans',  
                       is3D:true,  
                       pieHole: 0.4  
                      };  
@@ -72,32 +71,7 @@
 
 
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>  
-           <script type="text/javascript"> 
 
-            google.charts.load("current", {packages:["corechart"]});
-           google.charts.setOnLoadCallback(drawChart);  
-           function drawChart()  
-           {  
-                var data = google.visualization.arrayToDataTable([  
-                          ['datetr', 'Number'],  
-                          <?php  
-                          while($row = mysqli_fetch_array($result3))  
-                          {  
-                               echo "['".$row["datetr"]."', ".$row["number"]."],";  
-                          }  
-                          ?>  
-                     ]);  
-                var options = {  
-                      title: 'Percentage par rapport au date ',  
-                      
-                      is3D:true,  
-                      pieHole: 0.4  
-                     };  
-                var chart = new google.visualization.PieChart(document.getElementById('piechart3'));  
-                chart.draw(data, options);  
-           }  
-           </script> 
 
 
       </head>  
@@ -108,17 +82,11 @@
                 <th><div id="piechart2" style="width: 800px; height: 400px;"></div>  </th>
 
             </tr>
-            <tr>
-                <th><div id="piechart3" style="width: 800px; height: 400px;"></div>  </th>
-            </tr>
+            
         </table>   
 
 
 
 
       </body>  
-
-      
  </html> 
-
-
