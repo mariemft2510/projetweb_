@@ -23,7 +23,7 @@ value="<?= $mannequin['idM']?>"
 <?php if (isset ($_POST ['search'])&& $mannequin ['idM']=$_POST['mannequin']){
     ?>
     selected 
-    <?php }
+    <?php}
 
 ?>
 >
@@ -67,3 +67,22 @@ foreach ($list as $catalogue){
 <?php
 } 
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
