@@ -1,65 +1,90 @@
-# [Start Bootstrap - SB Admin 2](https://startbootstrap.com/theme/sb-admin-2/)
+# [Now UI Dashboard](https://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
-[SB Admin 2](https://startbootstrap.com/theme/sb-admin-2/) is an open source admin dashboard theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
+![alt text](https://s3.amazonaws.com/creativetim_bucket/products/75/original/opt_nud_thumbnail.jpg)
 
-For the legacy Bootstrap 3 version of this theme, you can view the [last stable release](https://github.com/StartBootstrap/startbootstrap-sb-admin-2/releases/tag/v3.3.7%2B1) of SB Admin 2 for Bootstrap 3.
+**[Now UI Dashboard](https://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html)** is a responsive Bootstrap 4 kit provided for free by [Invision](https://www.invisionapp.com/) and [Creative Tim](https://www.creative-tim.com/). It combines colors that are easy on the eye, spacious cards, beautiful typography, and graphics. Now UI Dashboard comes packed with all plugins that you might need inside a project and documentation on how to get started. It is light and easy to use, and also very powerful.
 
-## Preview
+Now UI Dashboard has the same design characteristics as Now UI Kit, so it is quite convenient to use them together. Or you can choose between them depending on the project at hand. If you love Now UI Kit, you'll love Now UI Dashboard.
+Create awesome, lifelike prototypes with InVision and Now so your users can experience and give feedback on your vision!
 
-[![SB Admin 2 Preview](https://assets.startbootstrap.com/img/screenshots/themes/sb-admin-2.png)](https://startbootstrap.github.io/startbootstrap-sb-admin-2/)
 
-**[Launch Live Preview](https://startbootstrap.github.io/startbootstrap-sb-admin-2/)**
+**Bootstrap 4 Support**
+Now UI Dashboard is built on top of the much awaited Bootstrap 4. This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4 project; you can just import the Now UI Dashboard style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
 
-## Status
+**Example Pages**
+We wanted to fully display the power of this dashboard, so the kit comes packed with examples showing you how to use the components. Inside the product you will find:
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-sb-admin-2/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-sb-admin-2.svg)](https://www.npmjs.com/package/startbootstrap-sb-admin-2)
-[![Build Status](https://travis-ci.org/StartBootstrap/startbootstrap-sb-admin-2.svg?branch=master)](https://travis-ci.org/StartBootstrap/startbootstrap-sb-admin-2)
-[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-sb-admin-2/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-sb-admin-2)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-sb-admin-2/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-sb-admin-2?type=dev)
+## Links:
 
-## Download and Installation
++ [Live Preview](https://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html)
++ [Login Page](https://demos.creative-tim.com/now-ui-dashboard-pro/examples/pages/login.html)
++ [Register Page](https://demos.creative-tim.com/now-ui-dashboard-pro/examples/pages/register.html)
++ [Now UI Dashboard PRO](https://demos.creative-tim.com/now-ui-dashboard-pro/examples/dashboard.html) (from $49)
 
-To begin using this template, choose one of the following options to get started:
+**Tutorial**
+In order for you to easily be able to use the Now UI Dashboard, we have created a tutorial page in our documentation. It shows the structure for the files inside the archive and how to import them. It then features every components with a description and example how to use it. You can see the details [here](https://demos.creative-tim.com/now-ui-dashboard/docs/1.0/getting-started/introduction.html).
 
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/sb-admin-2/)
-* Install via npm: `npm i startbootstrap-sb-admin-2`
-* Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-sb-admin-2.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-sb-admin-2)
 
-## Usage
+### What's included
 
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+Within the download you'll find the following directories and files:
 
-### Gulp Tasks
+```
+Now Ui Dashboard
+│   ├── assets
+│   │   ├── demo
+│   │   ├── css
+│   │   │   ├── bootstrap.min.css
+│   │   │   ├── now-ui-dashboard.css
+│   │   │   ├── now-ui-dashboard.min.css
+│   │   │   └── now-ui-dashboard.css.map
+│   │   ├── fonts
+│   │   ├── img
+│   │   ├── js
+│   │   │   ├── core
+│   │   │   ├── plugins
+│   │   │   ├── now-ui-dashboard.js
+│   │   │   └── now-ui-dashboard.min.js
+│   │   └── scss
+│   │   │   ├── now-ui-dashboard
+│   │   │   └── now-ui-dashboard.scss
+│   ├── docs
+│   ├── examples
+│   │   ├── upgrade.html
+│   │   ├── typography.html
+│   │   ├── tables.html
+│   │   ├── notifications.html
+│   │   ├── map.html
+│   │   ├── dashboard.html
+│   │   ├── user.html
+│   │   └── icons.html
+│   ├── nucleo-icons.html
+└── CHANGELOG.md
+```
 
-* `gulp` the default task that builds everything
-* `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
-* `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-* `gulp js` minifies the themes JS file
-* `gulp vendor` copies dependencies from node_modules to the vendor directory
+## Useful Links
 
-You must have npm installed globally in order to use this build environment. This theme was built using node v11.6.0 and the Gulp CLI v2.0.1. If Gulp is not running properly after running `npm install`, you may need to update node and/or the Gulp CLI locally.
+More products from Creative Tim: <http://www.creative-tim.com/bootstrap-themes>
 
-## Bugs and Issues
+Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-sb-admin-2/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/theme/sb-admin-2/).
+Freebies: <http://www.creative-tim.com/products>
 
-## About
+Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+Social Media:
 
-* <https://startbootstrap.com>
-* <https://twitter.com/SBootstrap>
+Twitter: <https://twitter.com/CreativeTim>
 
-Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
+Facebook: <https://www.facebook.com/CreativeTim>
 
-* <https://davidmiller.io>
-* <https://twitter.com/davidmillerhere>
-* <https://github.com/davidtmiller>
+Dribbble: <https://dribbble.com/creativetim>
 
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+Google+: <https://plus.google.com/+CreativetimPage>
 
-## Copyright and License
+Instagram: <https://instagram.com/creativetimofficial>
 
-Copyright 2013-2021 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE) license.
+[CHANGELOG]: ./CHANGELOG.md
+[LICENSE]: ./LICENSE
+[version-badge]: https://img.shields.io/badge/version-1.0.1-blue.svg
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg

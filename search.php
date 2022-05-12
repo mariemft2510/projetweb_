@@ -1,9 +1,9 @@
 <?php
-require_once '../Controller/mannequinC.php';
-$mannequinC = new catalogueC();
-$mannequins =$mannequineC ->afficherMannequins();
-if (isset ($_POST['mannequin'])&& isset ($_POST ['search '])){
-    $list = $catalogueC ->afficherlisteCatalogue($_POST ['mannequin']);
+require_once '../Controller/ServicesC.php';
+$ServicesC = new PublicationC();
+$Services =$ServicesC ->afficherServicess();
+if (isset ($_POST['Services'])&& isset ($_POST ['search '])){
+    $list = $PublicationC ->afficherlistePublication($_POST ['Services']);
 ?>
 }
 <div class ="form-contrainer">
@@ -14,20 +14,20 @@ if (isset ($_POST['mannequin'])&& isset ($_POST ['search '])){
 <label>Search:</label>
 </div>
 <div class="col-75">
-<select name="Mannequin" id="Mannequin">
+<select name="Services" id="Services">
 <?php
-foreach ($mannequin as $mannequin){
+foreach ($Services as $Services){
 ?>
 <option 
-value="<?= $mannequin['idM']?>"
-<?php if (isset ($_POST ['search'])&& $mannequin ['idM']=$_POST['mannequin']){
+value="<?= $Services['idt']?>"
+<?php if (isset ($_POST ['search'])&& $Services ['idt']=$_POST['Services']){
     ?>
     selected 
-    <?php}
+    <?php }
 
 ?>
 >
-<?= $mannequin ['nom']?>
+<?= $Services ['numan']?>
 </option>
 <?php 
 
@@ -48,12 +48,11 @@ value="<?= $mannequin['idM']?>"
     <h2> MUSIC</h2>
     <div class ="shop-items">
     <?php
-foreach ($list as $catalogue){
+foreach ($list as $Publication){
     ?>
     <div class ="shop-items">
 
 <strong class =""shop-items-title"> <?= $album['titre'] ?> </strong>
-<img src ="../assets/images/<?=$album ['image']?> class ="shop-items-image">
 <div class ="shop-items-details">
 <span class "shop-item-price"><?= $album['prix'] ?>dt . </span>
 </div>
@@ -67,22 +66,3 @@ foreach ($list as $catalogue){
 <?php
 } 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
